@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  subtitle: MyString
+  body: MyText
+  mainImage: MyString
+  category: MyString
+  tagOne: MyString
+  tagTwo: MyString
+  tagThree: MyString
+  thumbsUp: 1
+  thumbsDown: 1
+  author: MyString
+
+two:
+  title: MyString
+  subtitle: MyString
+  body: MyText
+  mainImage: MyString
+  category: MyString
+  tagOne: MyString
+  tagTwo: MyString
+  tagThree: MyString
+  thumbsUp: 1
+  thumbsDown: 1
+  author: MyString
