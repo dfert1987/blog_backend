@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
-    before_action :find_user_by_id, only:[:show, :update] 
-    before_action :authorize, only: :index
+    before_action :find_user_by_id, only:[:show, :update]
+
+    skip_before_action :authorize, only: :create
 
     def index
         @users = User.all
