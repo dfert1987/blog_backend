@@ -18,11 +18,11 @@ class AuthenticationController < ApplicationController
           status: :unauthorized
         )
       else
-        payload = { user_id: @user.id }
-        secret = 'do not reveal'
-        token = JWT.encode payload, secret
+        payload = { user: @user }
+        secret = Rails.application.secret_key_base[0]
+        @token = JWT.encode(payload, secret)
 
-        render json: { token: token }, status: :ok
+        render json: { user: @user, token: @token }, status: :ok
   end
 end
 end

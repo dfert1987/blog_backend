@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+    skip_before_action :authorize
     before_action :find_blog_by_id, only:[:show, :update]
 
     def index
@@ -7,6 +8,7 @@ class BlogsController < ApplicationController
     end
 
     def show
+        @blog = Blog.find(params[:id])
         render json: @blog
     end
 
