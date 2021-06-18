@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_12_001000) do
+ActiveRecord::Schema.define(version: 2021_06_18_145226) do
 
   create_table "blogs", force: :cascade do |t|
     t.string "title"
@@ -40,6 +40,13 @@ ActiveRecord::Schema.define(version: 2021_06_12_001000) do
     t.boolean "admin"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.text "about"
+    t.string "address_line_1"
+    t.string "address_line_two"
+    t.string "city"
+    t.string "last_name"
+    t.string "first_name"
+    t.string "state"
   end
 
 end
