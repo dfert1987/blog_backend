@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    skip_before_action :authorize, only:[:create, :index]
+    skip_before_action :authorize, only:[:create, :update, :index]
 
     before_action :find_user_by_id, only:[:show, :update]
     def index
@@ -36,6 +36,6 @@ class UsersController < ApplicationController
     end
 
     def find_user_by_id 
-        @user = User.find(params[:username, :password])
+        @user = User.find(params[:id])
     end
 end
