@@ -1,5 +1,5 @@
 class BlogsController < ApplicationController
-    skip_before_action :authorize
+    skip_before_action :authorize only:[:index, :show]
     before_action :find_blog_by_id, only:[:show, :update]
 
     def index
