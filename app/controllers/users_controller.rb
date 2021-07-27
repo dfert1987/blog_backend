@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    skip_before_action :authorize, only:[:create, :update, :index]
+    skip_before_action :authorize, only:[:create, :update, :show, :index]
 
     before_action :find_user_by_id, only:[:show, :update]
     def index
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
     end
 
     def update_params
-        params.require(:user).permit(:username, :passowrd, :email, :avatar, :address, :twitter, :name, :dob)
+        params.require(:user).permit(:username, :password_digest, :email, :avatar, :address, :twitter, :name, :dob, :admin, :about, :address_line_1, :address_line_two, :city, :last_name, :first_name, :state)
     end
 
     def find_user_by_id 

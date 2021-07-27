@@ -15,3 +15,11 @@ Blog.create(title: "Be Nice to Andy: It's not his fault.", subtitle: 'Its not hi
 Blog.create(title: "Theis Theis Baby: What's Not to like about the new German?", subtitle: 'Whats not to like about the new German', body:'greatest dunker ever?', mainImage: 'https://clutchpoints.com/wp-content/uploads/2021/03/Celtics-Bulls-Daniel-Theis.jpg', category: 'Bulls', tagOne: 'Daniel Theies', tagTwo: 'Trade', tagThree: 'Germany', thumbsUp: 1, thumbsDown: 0, author: 'david')
 
 User.create(username: "MeatballKing", password: 'Trogdor4', email: 'davidj.fertitta@gmail.com', avatar: 'https://i.imgur.com/VHwGqaB.jpg', first_name: 'David', last_name: 'Fertitta', address_line_1: '2840 Blake St.', address_line_two: '', city: 'Denver', state: 'CO', address: '2840 Blake St. Denver CO', twitter: 'https://twitter.com/FertittaDavid', name: 'David Fertitta', dob: '09/14/1987', admin: true, about: '')
+
+
+# COMMENTS 
+# EACH COMMENT HAS A BLOG, A USER, UPVOTE, DOWNVOTE, TEXT
+
+
+#REPLIES
+#EACH REPLY HAS A COMMENT, A USER, UPVOTE, DOWNVOTE

@@ -22,4 +22,7 @@ class ApplicationController < ActionController::API
         end
     end
 
+    def require_user_logged_in
+        redirect_to sign_in_path, alert: "You must be signed in first." if Current.user.nil?
+    end
 end
